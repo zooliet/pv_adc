@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["hl1sqi@gmail.com"]
   gem.description   = %q{Ultrasound card ADC sampling}
   gem.summary       = %q{PvADC.sampling, PvADC.fft}
-  gem.homepage      = "zoolu.co.kr"
+  gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
