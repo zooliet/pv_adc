@@ -1,5 +1,7 @@
 #include <ruby.h>
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 static VALUE read_fpga(int argc, VALUE *argv, VALUE serlf)
 {
@@ -14,7 +16,7 @@ static VALUE read_fpga(int argc, VALUE *argv, VALUE serlf)
 		printf("File open faild. You may check /dev/pvdspb_adc1 and pvdspb_adc.ko.\n");
 	}
 	else {
-		fread(buf, 2, 256, fp);			// when fixed later, it should be 256 -> 1024
+		fread(buf, 2, 1024, fp);			// when fixed later, it should be 256 -> 1024
 		fclose(fp);
 	}
 	
