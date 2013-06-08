@@ -3,7 +3,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define FFT_SIZE 2048
+// #define FFT_SIZE 2048
+#define FFT_SIZE 1024
 
 static VALUE read_fpga(int argc, VALUE *argv, VALUE self)
 {
